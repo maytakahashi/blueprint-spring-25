@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f9fa;
+    text-align: center;
+}
+  
+.header {
+    background: #ff6f61;
+    color: white;
+    padding: 20px;
+}
+  
+.header nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+  
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px;
+    text-align: left;
+}
+
+.about div {
+    text-align: center;
+}
+
+.profile-pic {
+    width: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+  
+.experience {
+    padding: 40px;
+}
+  
+.experience-item {
+    background: white;
+    padding: 15px;
+    margin: 10px auto;
+    width: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+  
+.projects {
+    padding: 40px;
+}
+  
+.project-item {
+    background: white;
+    padding: 15px;
+    margin: 10px auto;
+    width: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+  
+.contact {
+    padding: 40px;
+}
+  
+.like-button {
+    background-color: #ff6f61;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+  
+.like-button:hover {
+    background-color: #e65a50;
+}
+
+.footer {
+    background: #ff6f61;
+    color: white;
+    padding: 10px;
+    /* position: fixed; */
+    width: 100%;
+    bottom: 0;
+}
+  
+@media (max-width: 768px) {
+    .about {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .profile-pic {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    .experience-item, .project-item {
+      width: 80%;
+    }
+}
+  
+@media (max-width: 480px) {
+    .experience-item, .project-item {
+      width: 90%;
+    }
+  
+    .header nav a {
+      display: block;
+      margin: 10px 0;
+    }
+}
